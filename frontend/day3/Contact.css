@@ -1,0 +1,76 @@
+body
+{
+  background-color: rgb(44, 70, 70);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 1.2rem ;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    max-width: 900px;
+    font-size: 40px;
+}
+label{
+    color: bisque;
+    /* margin-bottom: 0.5rem; */
+}
+form input, form textarea{
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    /* text-align: left; */
+    font-size: 1.5rem;
+    background-color: rgba(118, 79, 11, 0.63);
+    border-color: rgb(6, 0, 0);
+    color: #ffffff;
+}
+form > h1{
+  margin-bottom: 20px;
+  color: #50872e;
+}
+
+.c-container1 .image-container1 {
+    width: 40rem;
+    height: 40rem;
+    margin-top: 0px;
+    border: 8px solid #50872e;
+}
+.c-container1 > div {
+  flex: 1;
+  margin-top: 0px;
+}
+.c-right1 {
+  gap: 0.5rem;
+  margin-top: 100px;
+}
+.flexColStart1 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexCenter1 {
+    margin-left: 0px;
+  display: flex;
+  row-gap: rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #2d5216;
+  color: bisque;
+  border: 3px solid #854504;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #854504;
+  color: bisque;
+  border: 3px solid #2d5216;
+  transition: 0.01s;
+}

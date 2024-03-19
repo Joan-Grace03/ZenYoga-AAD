@@ -1,0 +1,64 @@
+.shadow {
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.main {
+    margin-top: 200px;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: #111112; */
+    color: bisque;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    /* overflow-y: hidden; */
+}
+
+.data-table {
+    /* padding: 20rem 1rem; */
+    overflow: hidden;
+    width: 70vw;
+    height: auto;
+    border-collapse: collapse;
+    column-gap: 1rem;
+    text-align: center;
+    /* border: 1px solid blueviolet; */
+}
+th
+{
+    padding: 1rem;
+    color:black;
+}
+td {
+    padding: 1rem;
+    color: bisque;
+}
+
+thead {
+    border-bottom: 3px solid blueviolet;
+}
+.data-table-container {
+    /* padding: 20rem 1rem; */
+    color: bisque;
+    height: 80vh;
+    /* background-color: #c8a2a2; */
+    overflow: hidden;
+    border: 2.5px solid bisque;
+}
+
+.data-table-thead {
+    border-bottom: 3px solid rgb(220, 187, 24) ;
+    position: sticky;
+    top: -1px;
+    background-color: bisque;
+}
