@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar start */
+.navbar-container {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    color: bisque;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid ;
+}
+.navbar-l {
+    width: 20vw;
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.navbar-r {
+    margin-left: 100px;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+@media screen and (max-width:1090px)
+{
+    .navbar-r
+    {
+        display: none;
+    }
+}
+.navbar-b {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar-b:hover {
+    color: #50872e;
+    border-bottom: 3px solid #50872e;
+    transition: 0.1s all ease-out;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    z-index: 5;
+   top:0;
+}
+.header-bg{
+    background-color: rgba(13, 51, 13, 0.85);
+    transition: 0.3s ease-in-out;
+}
+/* navbar end */
+/* Main home section */
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+}
+.into-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000b5;
+    opacity: 0.8;
+}
+.hero-wrapper {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content {
+    color: bisque;
+    position: absolute;
+    transform: translate(-47%, -40%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.hero .content h1{
+    font-size: 100px;
+    color: #59a22c;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.hero .content p{
+    font-size: 50px;
+    margin-top: 0.1rem;
+    font-weight: 200;
+    /* text-transform: uppercase; */
+}
+/* End of hero section */
+/* counters css */
+.c-container{
+    color: bisque;
+    justify-content: space-around;
+    background-color: #854504;
+    gap: 1rem;
+}
+.flexCenter {
+    margin-left: 0px;
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stats{
+    width: 100%;
+    justify-content: space-between;
+}
+.stat>:nth-child(1)
+{
+    font-size: 50px;
+}
+.stat>:nth-child(1)>:last-child{
+    color: bisque;
+}
+/* end */
+/* background css */
+.v-container .image-container {
+    width: 50rem;
+    height: 53rem;
+    margin-top: 40px;
+    border: 8px solid #50872e;
+}
+.v-container > div {
+  flex: 1;
+}
+.v-right {
+  gap: 0.5rem;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.primaryText {
+  color: #4d2b01;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.tertiaryText
+{
+    font-size: 50px;
+    color: bisque;
+}
+.secondaryText {
+  color:#50872e;
+  font-size: 50px;
+}
+.orangeText {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+img{
+     width: 100%;
+    height: 100%;
+}
+/* end  */
+/* gallery css */
+.g-container{
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #50872e;
+    gap: 0.9rem;
+    margin-left: 0px;
+}
+.g-container > img{
+    width: 20%;
+    height: 20%;
+    flex-direction: row;
+}
+.g-wrapper > p{
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    color:#4d2b01;
+    font-size: 80px;
+}
+/* end */
+/* carousel */
+.slider-container {
+  width: 75%; /* Equivalent to w-3/4 */
+  margin: auto; /* Equivalent to m-auto */
+  background-color: #462b1a;
+}
+
+.slider-item {
+  margin-top: 20px; /* Equivalent to mt-20 */
+}
+
+.slider-item .slider-image {
+  height: 450px; /* Equivalent to h-[450px] */
+  background-color: white; /* Equivalent to bg-white */
+  color: black; /* Equivalent to text-black */
+  border-radius: 0.75rem; /* Equivalent to rounded-xl */
+}
+
+.slider-item .slider-image .image-container {
+  height: 14rem; /* Equivalent to h-56 */
+  background-color: #6b46c1; /* Equivalent to bg-indigo-500 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.75rem; /* Equivalent to rounded-t-xl */
+}
+
+.slider-item .slider-image .image-container img {
+  height: 11rem; /* Equivalent to h-44 */
+  width: 11rem; /* Equivalent to w-44 */
+  border-radius: 50%; /* Equivalent to rounded-full */
+}
+
+.slider-item .slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Equivalent to gap-4 */
+  padding: 1rem; /* Equivalent to p-4 */
+}
+
+.slider-item .slider-content .title {
+  font-size: 1.5rem; /* Equivalent to text-xl */
+  font-weight: 600; /* Equivalent to font-semibold */
+}
+
+.slider-item .slider-content .description {
+  text-align: center;
+}
+
+.slider-item .slider-content .read-more-btn {
+  background-color: #6b46c1; /* Equivalent to bg-indigo-500 */
+  color: white; /* Equivalent to text-white */
+  font-size: 1.125rem; /* Equivalent to text-lg */
+  padding: 0.375rem 1.5rem; /* Equivalent to px-6 py-1 */
+  border-radius: 0.75rem; /* Equivalent to rounded-xl */
+}
+/* end */
+/* Footer */
+.f-container{
+    margin-top: 50px;
+    background-color: #854504;
+    justify-content: space-between;
+    /* border-top: .5px solid rgba(0,0,0,0.148) */
+}
+.f-left{
+    color: bisque;
+    gap: 1rem;
+}
+.f-menu{
+    gap: 1.5rem;
+    font-size: 2rem;
+    color: bisque;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.f-menu .f-hover:hover
+{
+    color: #50872e;
+    border-bottom: 3px solid #50872e;
+    transition: 0.1s all ease-out;
+    font-weight: bold;
+    /* position: absolute; */
+}
